@@ -6,34 +6,20 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
 
 #### 软件架构
-软件架构说明
+	本仓库是一个Kotlin跨平台Demo 里面有 Android + iOS + MAC OS + Server 端的实现参考
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. kmm 是公共目录 andoid + iOS + mac os 都会使用到里面的源代码 属于客户端的公共目录
+2. server端暂时没有使用kmm目录的内容，server端内部有跨js端的实现参考例子
+3. android端的Gradle在android目录下，io端的grqdle在kmm目录下
+4. 本例子在xcode编译的时候，需要在xcode添加编译前脚本
+```
+cd "$SRCROOT/kmm"
+echo "kmmdir `pwd`"
+source ~/.bash_profile
+./gradlew :kmm:embedAndSignAppleFrameworkForXcode
+```
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
